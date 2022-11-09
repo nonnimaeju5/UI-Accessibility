@@ -1,0 +1,102 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/*  border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(70, 180, 134);
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/*  Containers are used to pad the content inside of them, and there are two container classes available: The . container class provides a responsive fixed width container. The . container-fluid class provides a full width container, spanning the entire width of the viewport. */
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+/* The container for all h1 */
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* The container for a href "Register" */
+.container a {
+  text-decoration: none;
+  color: rgb(53, 160, 26);
+}
+/* Styling for the button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: rgb(42, 180, 8);
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+/* Styling for the button when it is hovered over */
+.btn:focus {
+  outline: 0;
+}
+/* Styling for the button when it is clicked */
+.btn:active {
+  transform: scale(0.98);
+}
+/* Styling for the button when it is disabled */
+.text {
+  margin-top: 30px;
+}
+/* Wraps around the input and the label */
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+/* Wraps around the input*/ 
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+/* Wraps around the label */
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: rgb(4, 180, 13);
+}
+/* Wraps around the label */
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+/* Wraps around the label */
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/* Wraps around the label */
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}

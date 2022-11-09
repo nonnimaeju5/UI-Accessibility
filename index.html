@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form for UI Accessibility</title>
+  </head>
+  <body>
+    <!-- Container around the form -->
+    <!-- Containers are used to pad the content inside of them, and there are two container classes available: The . container class provides a responsive fixed width container. The . container-fluid class provides a full width container, spanning the entire width of the viewport. -->
+    <div class="container">
+      <h1>Please Login</h1>
+      <form>
+        <!-- This wraps around the input -->
+        <div class="form-control">
+          <input type="text" required>
+          <label>Name</label>
+        </div>
+        
+        <div class="form-control">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <!-- A button with the text of Login -->
+        <button class="btn">Login</button>
+
+        <p class="text">Don't have an account? <a href="#">Register</a> </p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
