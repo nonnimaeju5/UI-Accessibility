@@ -9,29 +9,33 @@
   <body>
     <!-- Container around the form -->
     <!-- Containers are used to pad the content inside of them, and there are two container classes available: The . container class provides a responsive fixed width container. The . container-fluid class provides a full width container, spanning the entire width of the viewport. -->
+  <main>
     <div class="container">
       <h1>Please Login</h1>
       <form>
         <!-- This wraps around the input -->
-        <label for="input" div class="form-control">
-          <input type="text" required>
-          <label>Name</label>
-        </label>
+        <!-- This wraps around the input -->
+        <div class="form-control">
+          <input type="text" name="Name" required aria-label="Write your full name. This is a required field"> <!-- Aria label is used for text to speech accessibility -->
+          <label>>Full name *</label>
+        </div>
         
-        <label for="email" div class="form-control">
-          <input type="email" required>
-          <label>Email</label>
-        </label>
+        <div class="form-control">
+          <input type="email" email="Email" required aria-label="Write your email. This is a required field">
+          <label>>Email *</label>
+        </div>
 
-        <label for="password" div class="form-control">
-          <input type="password" required>
-          <label>Password</label>
-        </label>
+        <div class="form-control">
+          <input type="password" password="Password" required aria-label="Write your password. This is a required field">
+          <label>Password *</label>
+        </div>
         <!-- A button with the text of Login -->
         <button class="btn">Login</button>
 
         <p class="text">Don't have an account? <a href="#">Register</a> </p>
       </form>
+    </main>
+
     </div>
     <script src="script.js"></script>
   </body>
